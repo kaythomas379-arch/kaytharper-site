@@ -5,90 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kay Tharper | Real Estate Marketing Consultant</title>
   <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #222;
-      background-color: #fff;
+    :root {
+      --primary-color: #00a0af; /* Teal from logo */
+      --black: #000;
+      --white: #fff;
     }
-    header {
-      background: linear-gradient(to right, #f3c6d3, #a8d5ba);
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #c75c8b;
-      margin-bottom: 1rem;
-    }
-    .cta-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #a8d5ba;
-      color: #fff;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: var(--white); color: var(--black); }
+    header { background: var(--white); padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #eee; }
+    header img { height: 40px; }
+    nav a {
+      margin-left: 1.5rem;
       text-decoration: none;
-      border-radius: 4px;
+      color: var(--black);
       font-weight: bold;
     }
-    footer {
-      background-color: #f3c6d3;
-      padding: 1rem;
+    nav a:hover { color: var(--primary-color); }
+    .hero {
+      padding: 4rem 2rem;
       text-align: center;
-      font-size: 0.9rem;
+      background: #f9f9f9;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-inline: auto; }
+    .hero a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary-color);
+      color: var(--white);
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+    }
+    @media (max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; }
+      nav a { margin: 0.5rem 0; display: block; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Kay Tharper</h1>
-    <p>Smart, Strategic Marketing for Real Estate Lease-Ups</p>
+    <img src="Screenshot%202025-08-24%20at%208.39.03%E2%80%AFPM.png" alt="Kay Tharper Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#coaching">Coaching</a>
+      <a href="#books">Books</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About the Practice</h2>
-    <p>
-      With over a decade of experience launching lease-up campaigns for top real estate brands like AH4R, Lennar,
-      and Fore Property, I help developers and marketing teams streamline their strategy, enhance campaign execution,
-      and boost performance. Whether you're in pre-leasing or ramping occupancy, I bring data-informed insight
-      with creative marketing precision.
-    </p>
+  <section class="hero" id="home">
+    <h1>Helping Developers Lease Faster</h1>
+    <p>I'm Kay Tharper—a real estate marketing strategist helping developers and REITs accelerate lease-ups through performance-driven campaigns and operational efficiency.</p>
+    <a href="https://calendly.com/kaytharper" target="_blank">Book a Free Call</a>
   </section>
 
-  <section>
-    <h2>Consulting Services</h2>
-    <ul>
-      <li>90-Day Lease-Up Strategy & Execution Support</li>
-      <li>Marketing Audit & Campaign Review</li>
-      <li>Team & Vendor Workflow Optimization</li>
-      <li>Creative & Messaging Development</li>
-    </ul>
-    <a class="cta-button" href="https://calendly.com/your-link-here">Book a Consultation</a>
+  <section id="about">
+    <h2>About Kay</h2>
+    <p>With 12+ years in real estate marketing—including experience at Lennar, AH4R, and Fore Property—I bring deep industry knowledge, sharp digital strategy, and hands-on campaign leadership. I’ve helped brands hit 95% occupancy, improve retention, and drive conversion with clarity and confidence.</p>
   </section>
 
-  <section>
-    <h2>Coming Soon: E-Book Launch</h2>
-    <p>
-      I'm currently developing a digital guide packed with real-world strategies for launching high-performance
-      lease-up marketing campaigns. Stay tuned!
-    </p>
-    <a class="cta-button" href="#">Join the Waitlist</a>
+  <section id="coaching">
+    <h2>1:1 Marketing Consulting & Coaching</h2>
+    <p>Offering power sessions and monthly retainers tailored to marketing directors, developers, and lease-up teams looking to scale effectively, run smoother operations, and fill units faster.</p>
+  </section>
+
+  <section id="books">
+    <h2>My Upcoming Book</h2>
+    <p><strong>The Lease-Up Marketing Playbook: 90 Days to Occupancy</strong> drops soon. This $15 resource breaks down how to launch and optimize high-performing campaigns that get results.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <p>“Kay helped us overhaul our lease-up strategy and reduce time-to-occupancy by 30%. She’s the real deal.” — Client testimonial coming soon.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Have a question or want to collaborate? Reach me at <a href="mailto:kaythomas379@gmail.com">kaythomas379@gmail.com</a>.</p>
   </section>
 
   <footer>
-    &copy; 2025 Kay Tharper Consulting | Built for clarity, growth, and efficiency.
+    <p>&copy; 2025 Kay Tharper. All rights reserved.</p>
   </footer>
 </body>
 </html>
